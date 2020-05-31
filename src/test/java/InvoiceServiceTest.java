@@ -8,6 +8,13 @@ import org.mockito.junit.MockitoRule;
 
 public class InvoiceServiceTest {
 
+    @Rule
+    public MockitoRule rule = MockitoJUnit.rule();
+
+    @Mock
+    public RideRepository rideRepository;
+
+
 
     InvoiceService invoiceService = null;
 
